@@ -1,0 +1,160 @@
+html, body, div, section, p, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  /*text-align: center;*/
+  display: block;
+  font-family: sans-serif;
+}
+
+html{
+  background-color: rgba(123, 170, 232, 0.7);
+  background: linear-gradient(rgba(123, 170, 232, 0.7), rgba(#3646ff, 0.81), white);
+}
+
+.container{
+width: 85%;
+}
+
+.navbar-brand{
+  color:white;
+}
+
+.title {
+  margin-top: 60px;
+}
+
+.panel {
+  margin-top: 40px;
+  background-color: rgba(123, 170, 232, 0.7);
+  height:100%;
+}
+
+.thumbnail{
+  width:100%;
+}
+
+.thumbnail:hover {
+  border: 2px solid steelblue;
+}
+
+.front-end, .back-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thumbnail .caption {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.myskills {
+  margin-top: 20px;
+}
+
+.profile-pic {
+  float: left;
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+div.about {
+  margin-top: 20px;
+}
+
+.about p {
+  margin-top: 10px;
+}
+
+#skills {
+  padding-top: 100px;
+  color: #2633c7;
+}
+
+#skills h1{
+  color:white;
+  text-shadow:1px 1px #2633c7;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+#about p {
+  line-height: 1.5;
+}
+
+section {
+  padding: 30px;
+
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  color: white;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url('https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?dpr=2&auto=format&fit=crop&w=1500&h=998&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px solid black;
+}
+
+.jumbotron p {
+  margin-top: 30px;
+}
+
+.banner {
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+  text-shadow: -6px 1px 5px black;
+}
+
+.jumbotron h1 {
+  font-size: 70px;
+  margin-top: 40px;
+}
+
+
+
+button {
+  margin-top: 25px;
+  font-size: 30px;
+  height: 54px;
+}
+
+button.btn-default {
+  width: 150px;
+}
+
+
+i.fa {
+  font-size: 30px;
+}
+
+.front-end-h3, .back-end-h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
