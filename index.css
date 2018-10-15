@@ -55,7 +55,7 @@ width: 95%;
 .thumbnail:hover .caption{
   border: 2px solid steelblue;
   transform: scale(1);
-  background-color: rgba(123, 170, 232, 0.8);
+  background-color: rgba(123, 170, 232, 0.9);
   color: white;
   width:90%;
   height:100%;
@@ -220,6 +220,8 @@ i.fa {
   font-size: 1.5em;
 }
 
-#projects{
-
+h4 a{
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 1.3em;
 }

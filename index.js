@@ -33,7 +33,7 @@ window.addEventListener('scroll', function(){
     console.log("part 1");
 
   }
-  else if (height >= 650 && height < 1200) {
+  else if (height >= 650 && height < 1500) {
     console.log("part 2");
     sections[0].classList.add("fadeOut");
     sections[0].classList.remove("slideInRight");
@@ -42,7 +42,7 @@ window.addEventListener('scroll', function(){
     sections[2].classList.add("fadeOut");
     sections[2].classList.remove("slideInRight");
   }
-  else if(height >= 1300){
+  else if(height >= 1500){
     sections[1].classList.add("fadeOut");
     sections[1].classList.remove("slideInLeft");
     sections[2].classList.remove("fadeOut");
