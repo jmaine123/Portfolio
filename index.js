@@ -6,29 +6,46 @@ console.log(jumbotron);
 
 window.addEventListener('scroll', function(){
   var height = window.scrollY;
-
   console.log(height);
 
   // for (i = 0; i < sections.length; i++){
   //   sections[i].style.display = "hide";
   // }
 
-  if (height === 10 || height === 50){
-    // jumbotron[0].classList.add("fadeIn");
-    // sections[0].classList.add("slideInRight");
+  if (height === 0 || height <= 200){
+    jumbotron[0].classList.remove("fadeOut");
+    jumbotron[0].classList.add("fadeIn");
+    sections[0].classList.add("fadeOut");
+    sections[0].classList.remove("slideInRight");
 
 
     // sections[0].style.display = "block";
     // jumbotron[0].style.display = "block";
 
   }
-  else if (height >= 90) {
-    // jumbotron[0].style.display = "none";
-    // sections[0].style.display = "none"
-    // sections[1].style.display = "block";
-    // console.log(height);
-  }
-  else {
+  else if (height > 200 && height < 650) {
+    jumbotron[0].classList.remove("fadeIn");
+    jumbotron[0].classList.add("fadeOut");
+    sections[0].classList.remove("fadeOut");
+    sections[0].classList.add("slideInRight");
+    sections[1].classList.add("fadeOut");
+    sections[1].classList.remove("slideInLeft");
+    console.log("part 1");
 
+  }
+  else if (height >= 650 && height < 1200) {
+    console.log("part 2");
+    sections[0].classList.add("fadeOut");
+    sections[0].classList.remove("slideInRight");
+    sections[1].classList.remove("fadeOut");
+    sections[1].classList.add("slideInLeft");
+    sections[2].classList.add("fadeOut");
+    sections[2].classList.remove("slideInRight");
+  }
+  else if(height >= 1300){
+    sections[1].classList.add("fadeOut");
+    sections[1].classList.remove("slideInLeft");
+    sections[2].classList.remove("fadeOut");
+    sections[2].classList.add("slideInRight");
   }
 });
