@@ -23,7 +23,7 @@ window.addEventListener('scroll', function(){
     // jumbotron[0].style.display = "block";
 
   }
-  else if (height > 200 && height < 650) {
+  else if (height > 200 && height < 900) {
     jumbotron[0].classList.remove("fadeIn");
     jumbotron[0].classList.add("fadeOut");
     sections[0].classList.remove("fadeOut");
@@ -33,7 +33,7 @@ window.addEventListener('scroll', function(){
     console.log("part 1");
 
   }
-  else if (height >= 650 && height < 1500) {
+  else if (height >= 900 && height < 1600) {
     console.log("part 2");
     sections[0].classList.add("fadeOut");
     sections[0].classList.remove("slideInRight");
@@ -42,7 +42,7 @@ window.addEventListener('scroll', function(){
     sections[2].classList.add("fadeOut");
     sections[2].classList.remove("slideInRight");
   }
-  else if(height >= 1500){
+  else if(height >= 1600){
     sections[1].classList.add("fadeOut");
     sections[1].classList.remove("slideInLeft");
     sections[2].classList.remove("fadeOut");
