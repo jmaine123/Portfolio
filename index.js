@@ -1,6 +1,7 @@
 sections = document.getElementsByTagName('section');
 jumbotron = document.getElementsByClassName('jumbotron');
-console.log(jumbotron);
+
+window.addEventListener("hashchange", function() { scrollBy(0, -55) });
 
 
 
