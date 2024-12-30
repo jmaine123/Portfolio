@@ -56,7 +56,11 @@ body{
 
 
 .container{
+<<<<<<< HEAD
 width: 95%;
+=======
+  width: 85%;
+>>>>>>> 34a29b7 (Updated Projects)
 }
 
 .navbar-brand{
