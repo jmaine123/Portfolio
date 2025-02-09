@@ -14,6 +14,7 @@ window.addEventListener('scroll', function(){
   // }
 
   if (height === 0 || height <= 200){
+    console.log('Header')
     jumbotron[0].classList.remove("fadeOut");
     jumbotron[0].classList.add("fadeIn");
     sections[0].classList.add("fadeOut");
@@ -25,13 +26,13 @@ window.addEventListener('scroll', function(){
 
   }
   else if (height > 200 && height < 900) {
+    console.log("part 1");
     jumbotron[0].classList.remove("fadeIn");
     jumbotron[0].classList.add("fadeOut");
     sections[0].classList.remove("fadeOut");
     sections[0].classList.add("slideInRight");
     sections[1].classList.add("fadeOut");
     sections[1].classList.remove("slideInLeft");
-    console.log("part 1");
 
   }
   else if (height >= 900 && height < 1600) {
@@ -43,10 +44,26 @@ window.addEventListener('scroll', function(){
     sections[2].classList.add("fadeOut");
     sections[2].classList.remove("slideInRight");
   }
-  else if(height >= 1600){
+  else if(height >= 1600  && height < 2300){
+    console.log("part 3");
     sections[1].classList.add("fadeOut");
     sections[1].classList.remove("slideInLeft");
     sections[2].classList.remove("fadeOut");
     sections[2].classList.add("slideInRight");
+    sections[3].classList.add("fadeOut");
+    sections[3].classList.remove("slideInLeft");
   }
+  else if(height >= 2300  && height < 3000){
+    console.log("part 4");
+    sections[2].classList.add("fadeOut");
+    sections[2].classList.remove("slideInLeft");
+    sections[3].classList.remove("fadeOut");
+    sections[3].classList.add("slideInLeft");
+  }
+  else if(height >= 3000){
+    console.log("part 5");
+    sections[3].classList.add("fadeOut");
+    sections[3].classList.remove("slideInLeft");
+  }
+
 });
