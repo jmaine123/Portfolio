@@ -56,7 +56,7 @@ window.addEventListener('scroll', function(){
   else if(height >= 2300  && height < 3000){
     console.log("part 4");
     sections[2].classList.add("fadeOut");
-    sections[2].classList.remove("slideInLeft");
+    sections[2].classList.remove("slideInRight");
     sections[3].classList.remove("fadeOut");
     sections[3].classList.add("slideInLeft");
   }
