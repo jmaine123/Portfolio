@@ -6,15 +6,30 @@ window.addEventListener("hashchange", function() { scrollBy(0, -55) });
 
 
 window.addEventListener('scroll', function(){
-  var height = window.scrollY;
+  let height = window.scrollY;
+  console.log('Scroll Height')
   console.log(height);
 
-  // for (i = 0; i < sections.length; i++){
-  //   sections[i].style.display = "hide";
-  // }
+  const jumbotronHeight = jumbotron.offsetHeight;
+  const BioSection = sections[0];
+  const BioSectionTop = BioSection.offsetTop;
+  const ProjectSection = sections[1];
+  const ProjectSectionTop = ProjectSection.offsetTop;
+  const GamesSection = sections[2];
+  const GamesSectionTop = GamesSection.offsetTop
+  const CasesSection = sections[3];
+  const CasesSectionTop = CasesSection.offsetTop
 
-  if (height === 0 || height <= 200){
-    console.log('Header')
+
+
+  let buffer = 200
+
+  console.log('First Section');
+  console.log(BioSectionTop);
+
+
+  if (height === 0 || height === 456){
+    // console.log('Header')
     jumbotron[0].classList.remove("fadeOut");
     jumbotron[0].classList.add("fadeIn");
     sections[0].classList.add("fadeOut");
@@ -25,7 +40,7 @@ window.addEventListener('scroll', function(){
     // jumbotron[0].style.display = "block";
 
   }
-  else if (height > 200 && height < 900) {
+  else if (height >= BioSectionTop - buffer && height < ProjectSectionTop - buffer) {
     console.log("part 1");
     jumbotron[0].classList.remove("fadeIn");
     jumbotron[0].classList.add("fadeOut");
@@ -35,7 +50,7 @@ window.addEventListener('scroll', function(){
     sections[1].classList.remove("slideInLeft");
 
   }
-  else if (height >= 900 && height < 1600) {
+  else if (height >= ProjectSectionTop - buffer && height < GamesSectionTop - buffer) {
     console.log("part 2");
     sections[0].classList.add("fadeOut");
     sections[0].classList.remove("slideInRight");
@@ -44,7 +59,7 @@ window.addEventListener('scroll', function(){
     sections[2].classList.add("fadeOut");
     sections[2].classList.remove("slideInRight");
   }
-  else if(height >= 1600  && height < 2300){
+  else if(height >= GamesSectionTop - buffer  && height < CasesSectionTop - buffer){
     console.log("part 3");
     sections[1].classList.add("fadeOut");
     sections[1].classList.remove("slideInLeft");
@@ -53,15 +68,15 @@ window.addEventListener('scroll', function(){
     sections[3].classList.add("fadeOut");
     sections[3].classList.remove("slideInLeft");
   }
-  else if(height >= 2300  && height < 3000){
+  else if(height >= CasesSectionTop - buffer && height < 5800){
     console.log("part 4");
     sections[2].classList.add("fadeOut");
     sections[2].classList.remove("slideInRight");
     sections[3].classList.remove("fadeOut");
     sections[3].classList.add("slideInLeft");
   }
-  else if(height >= 3000){
-    console.log("part 5");
+  else if(height >= 5900){
+    // console.log("part 5");
     sections[3].classList.add("fadeOut");
     sections[3].classList.remove("slideInLeft");
   }
